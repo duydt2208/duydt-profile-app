@@ -1,0 +1,21 @@
+.skill-container .skill-item {
+  margin-bottom: 10px;
+}
+.skill-container .skill-bar {
+  position: relative;
+  margin-top: 5px;
+}
+.skill-container .skill-bar .skill-background,
+.skill-container .skill-bar .skill-value {
+  height: 10px;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.skill-container .skill-bar .skill-background {
+  background: white;
+}
+.skill-container .skill-bar .skill-value {
+  background: #002387;
+  position: absolute;
+  top: 0px;
+}

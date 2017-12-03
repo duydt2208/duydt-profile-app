@@ -1,0 +1,50 @@
+<!-- <div class="professional-info content-panel">
+  <div class="content-item mobile-xl item-xl">
+    <div class="item-header fourth-bg-color">
+      <i class="material-icons">toys</i>Interest</div>
+    <div class="item-content icon-container">
+      <i class="material-icons" title="IT Things">devices</i>
+      <i class="material-icons" title="Android">android</i>
+      <i class="material-icons" title="Games">videogame_asset</i>
+      <i class="material-icons" title="Movies">movie</i>
+      <i class="material-icons" title="Music">headset</i>
+      <i class="material-icons" title="Taking photos">camera_alt</i>
+      <i class="material-icons rotate-30" title="Travelling">flight</i>
+      <i class="material-icons" title="Food">local_dining</i>
+      <i class="material-icons" title="Swimming">pool</i>
+      <i class="material-icons" title="Reading Manga/Technical book">book</i>
+    </div>
+  </div>
+</div> -->
+
+<div class="content-panel" *ngIf="interests">
+  <div class="content-item photo-item-wrapper mobile-xl" *ngFor="let interest of interests">
+    <div class="image-container">
+      <img class="photo-item" src="./assets/csharp-logo.png" alt="C# logo" />
+    </div>
+    <div class="item-description third-bg-color">
+        <div class="item-description-header">
+          <h3>{{interest.name}}</h3>
+        </div>
+        <div class="item-description-content">
+          {{interest.description}}
+        </div>
+      </div>
+  </div>
+
+  <!-- <div class="content-item item-xl photo-item-wrapper">
+    <div class="image-container">
+      <img class="photo-item" src="./assets/csharp-logo.png" alt="C# logo" />
+    </div>
+    <div class="item-description third-bg-color">
+      <div class="item-description-header">
+        <h3>C#</h3>
+        <p>30 months</p>
+      </div>
+      <div class="item-description-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam odio temporibus aut quo, beatae nulla, iusto provident
+        laudantium accusamus nam repellat eum ratione voluptates ab, sed molestias iure similique cumque.
+      </div>
+    </div>
+  </div> -->
+</div>

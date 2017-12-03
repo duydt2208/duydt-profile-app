@@ -1,0 +1,27 @@
+@import '../../../../variables.less';
+
+.skill-container {
+    
+        .skill-item {
+            margin-bottom: 10px;
+        }
+    
+        .skill-bar {
+            position: relative;
+            margin-top: 5px;
+    
+            .skill-background, .skill-value {
+                height: 10px;
+                opacity: 0.9;
+                border-radius: @skill_border_radius;
+            }
+            .skill-background {
+                background: white;
+            }
+            .skill-value {
+                background: #002387;
+                position: absolute;
+                top: 0px;
+            }
+        }
+    }

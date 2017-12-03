@@ -1,1 +1,211 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+}
+body * {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+.primary-bg-color {
+  background-color: #4285f4;
+}
+.secondary-bg-color {
+  background-color: tomato;
+}
+.third-bg-color {
+  background-color: #663399;
+}
+.fourth-bg-color {
+  background-color: #26C281;
+}
+.fifth-bg-color {
+  background-color: #F5D76E;
+}
+.content {
+  display: flex;
+  min-height: 100%;
+}
+.content .left-panel {
+  width: 350px;
+  position: fixed;
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #4285f4;
+  overflow: auto;
+  color: white;
+}
+.content .left-panel * {
+  color: white;
+}
+.content .left-panel .panel-content {
+  padding: 10px;
+}
+.content .main-content {
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+.main-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 22px;
+  margin-left: 370px;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.pro-info-wrapper {
+  margin-left: 50px;
+}
+nav.navigation {
+  position: fixed;
+  width: 100%;
+  overflow: auto;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 350px;
+  background: whitesmoke;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+nav.navigation .btn-nav {
+  color: black;
+  padding: 10px 50px;
+  border-bottom: solid 2px transparent;
+  text-decoration: none;
+}
+nav.navigation .btn-nav.selected {
+  font-weight: bold;
+  border-bottom-color: tomato;
+}
+nav.navigation .btn-nav:active {
+  color: white;
+  border-color: tomato !important;
+}
+nav.navigation .btn-nav:focus {
+  color: tomato;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.mobile-nav .btn-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  flex-grow: 1;
+  background: white;
+  border-radius: 0;
+  border: none;
+  padding: 5px 0;
+  box-shadow: none;
+  height: 45px;
+  color: black;
+  user-select: none;
+}
+nav .btn-nav:focus {
+  outline: 0;
+}
+nav .btn-nav.selected {
+  color: tomato;
+}
+nav .btn-nav:active {
+  color: white !important;
+  border-color: whitesmoke !important;
+  background: tomato;
+}
+@media only screen and (max-width: 600px) {
+  .content .photo-item-wrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 780px) {
+  body {
+    font-size: 17px;
+  }
+  nav.navigation {
+    display: none !important;
+  }
+  .content .left-panel {
+    position: relative;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+  }
+  .content .right-panel {
+    margin: 0;
+  }
+  .content .content-item.mobile-xl {
+    flex-basis: 100% !important;
+  }
+  .content .pro-info-wrapper {
+    margin-left: 10px;
+  }
+  .personal ~ app-main-content-wrapper {
+    display: none !important;
+  }
+  .mobile-hidden {
+    display: none !important;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .main-content {
+    overflow: auto;
+    height: 100%;
+    margin: 5px;
+  }
+  .content-panel {
+    margin-bottom: 38px;
+  }
+  .expertise-item {
+    line-height: 1.3em;
+  }
+  .expertise-item .icon {
+    font-size: 2em;
+  }
+  .photo-item-wrapper {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 900px) {
+  nav.navigation .btn-nav {
+    padding: 10px 20px;
+  }
+}
+.info-item .info-title {
+  font-size: 1.5em;
+  margin: 0.7em 0;
+  font-weight: 900;
+}
+.info-item .info-sub-title {
+  margin: 0.8em 0;
+}
+.info-item .info-content {
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+.main-content > * {
+  width: 100% !important;
+}

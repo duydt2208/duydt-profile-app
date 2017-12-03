@@ -1,0 +1,25 @@
+.contact-info > ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+.contact-info > ul > li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.contact-info .phone,
+.contact-info .email,
+.contact-info address,
+.contact-info .account > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.social-accounts .account > * {
+  display: flex;
+  align-items: center;
+}
+.social-accounts .icon-img {
+  margin-right: 5px;
+  height: 2em;
+  width: 2em;
+}
