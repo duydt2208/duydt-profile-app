@@ -88,6 +88,9 @@ nav.navigation .btn-nav {
   border-bottom: solid 2px transparent;
   text-decoration: none;
 }
+nav.navigation .btn-nav:hover {
+  color: tomato;
+}
 nav.navigation .btn-nav.selected {
   font-weight: bold;
   border-bottom-color: tomato;
@@ -97,7 +100,7 @@ nav.navigation .btn-nav:active {
   border-color: tomato !important;
 }
 nav.navigation .btn-nav:focus {
-  color: tomato;
+  border-color: tomato;
 }
 .mobile-nav {
   display: none;

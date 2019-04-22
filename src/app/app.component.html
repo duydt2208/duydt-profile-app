@@ -3,7 +3,8 @@
   </app-personal-info>
 
   <nav class="navigation">
-      <a routerLink="/professional" class="btn-nav" (click)="changePage(2)" [ngClass]="{'selected': (selectedPage | async) == 1 || (selectedPage | async) == 2}">
+      <a 
+      routerLink="/professional" class="btn-nav" (click)="changePage(2)" [ngClass]="{'selected': (selectedPage | async) == 1 || (selectedPage | async) == 2}">
         Experience
       </a>
       <a routerLink="/technical" class="btn-nav" (click)="changePage(3)" [ngClass]="{'selected': (selectedPage | async) == 3}">

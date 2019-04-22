@@ -4,7 +4,7 @@ import { NgRedux } from 'ng2-redux/lib/components/ng-redux';
 import { IAppState } from './store';
 import { CHANGE_PAGE } from './actions';
 import { select } from 'ng2-redux';
-import { debug } from 'util';
+// import { transition, trigger, state, style, animate, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +12,22 @@ import { debug } from 'util';
   styleUrls: [
     './app.component.css'
   ]
+  // animations: [
+  //   trigger('buttonClickedAnimation', [
+  //     state('true', style({
+  //       color: 'tomato'
+  //     })),
+  //     state('false', style({
+  //       color: 'black'
+  //     })),
+  //     transition('true <=> false', animate('200ms ease-in'))
+  //   ])
+  // ]
 })
 export class AppComponent implements OnInit {
 
   @select() selectedPage;
+
 
   ngOnInit(): void {
   }
@@ -23,7 +35,7 @@ export class AppComponent implements OnInit {
   }
 
   changePage(selectedPage: number) {
-    this.ngRedux.dispatch( { type: CHANGE_PAGE, selectedPage: selectedPage });
+    this.ngRedux.dispatch({ type: CHANGE_PAGE, selectedPage: selectedPage });
   }
 
 }

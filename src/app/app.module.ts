@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgReduxModule, NgRedux } from 'ng2-redux';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { PersonalInfoComponent } from './left-content/personal-info/personal-info.component';
@@ -36,7 +36,8 @@ import { IAppState, INITIAL_STATE, rootReducer } from './store';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgReduxModule
+    NgReduxModule,
+    BrowserAnimationsModule
   ],
   providers: [
     InterestService

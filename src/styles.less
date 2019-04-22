@@ -106,6 +106,10 @@ nav.navigation {
         padding: 10px 50px;
         border-bottom: solid 2px transparent;
         text-decoration: none;
+
+        &:hover {
+            color: @secondary_color;
+        }
         
         &.selected {
             font-weight: bold;
@@ -118,8 +122,7 @@ nav.navigation {
         }
 
         &:focus {
-            color: @secondary_color;
-            // border-color: @secondary_color !important;
+            border-color: @secondary_color;
         }
     }
 }
@@ -162,8 +165,6 @@ nav {
         }
 
         &.selected {
-            // color: white;
-            // background: @secondary_color;
             color: @secondary_color;
         }
 
